@@ -9,6 +9,14 @@
 进行 benchmark，运行结果如下图：
 ![image](assets/pallet-template-benchmark.png)
 
+将运行结果转化为权重定义：
+
+```rust
+/// - Base Weight: 14.89 us
+/// - DB Weight: 1 Write
+		#[pallet::weight(T::DbWeight::get().writes(1) + 15_000_000)]
+```
+
 ## 2 使用 node-template 生成 Chain Spec 文件（两种格式）
 
 此过程我并没有将 PoA 切换为 PoS 以及 去除 Sudo 模块，而是直接使用 node-template 进行修改，代码增加如下内容：
