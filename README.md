@@ -20,6 +20,7 @@
 ## 2 使用 node-template 生成 Chain Spec 文件（两种格式）
 
 此过程我并没有将 PoA 切换为 PoS 以及 去除 Sudo 模块，而是直接使用 node-template 进行修改，代码增加如下内容：
+
 chain_spec.rs
 
 ```rust
