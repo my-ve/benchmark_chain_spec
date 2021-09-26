@@ -14,7 +14,7 @@
 ```rust
 /// - Base Weight: 14.89 us
 /// - DB Weight: 1 Write
-		#[pallet::weight(T::DbWeight::get().writes(1) + 15_000_000)]
+#[pallet::weight(T::DbWeight::get().writes(1) + 15_000_000)]
 ```
 
 ## 2 使用 node-template 生成 Chain Spec 文件（两种格式）
